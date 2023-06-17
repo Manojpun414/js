@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("hello".length); /* .length is to find out total letters in hello*/
+        console.log("hello".toUpperCase());
+
+        const object1 = {
+            message:"hello"
+        };
+        const object2 = object1;
+        console.log(object2); /*This is called copy by reference*/
+
+
+        const object3 = {
+            message:"Manoj"
+        };
+        object3.message = "Good job";
+        console.log(object3);
+
+        const object4 = {
+            message : "Good job",
+        };
+        console.log(object4 === object1);
+        console.log(object3 === object3);
+
+        const object5 = {
+            messagae : "Good job",
+            price:177,
+        };
+        const {message, price} =object5;
+        console.log(message); /*Line 38 and 39 are destructuring shortcut*/
+        console.log(price)
+
+        
+    </script>
+</body>
+</html>

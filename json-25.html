@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const product2 = {
+            name : "Manoj",
+            rating : {
+                stars : 4.7,
+                count : 87,
+            },
+            fun : function function1() {
+                console.log("function inside object");
+            }
+        };
+        console.log(JSON.stringify(product2)) /*In JSON all properties and strings must use double quotes and it does not support single quotes and functions.*/ /*JSON is a built-in objects*/ 
+        /*JSON.stringify converts JavaScript objects into JSON.Also stringify display message as sting. Note:Json does not work with function so it will not display function on console.*/ 
+
+        console.log(JSON.parse(JSON.stringify(product2))) /*JSON.parse is used to convert Json back to JavaScript object*/
+    </script>
+</body>
+</html>

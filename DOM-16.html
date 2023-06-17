@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title> 
+</head>
+<body>
+    <button>Hello</button>
+    <button class="js-button">Second button</button>
+    <script>
+        /*DOM:Document Object Model.DOM is another built-in object.The document objects represents/models the webpage.*/
+        /*
+        document.body.innerHTML = "Hello";
+        document.title = "Good Job!";
+        */
+
+           /*Properties*/
+        // console.log(document.title);
+        // document.title ="Changed";
+
+        // console.log(document.body.innerHTML); /*It is used to show html code inside body element*/
+        // document.body.innerHTML = "<button>Hello</button>";
+
+        /*Method*/
+        /*document.querySelector() let us get any element from the page and put it inside JavaScript*/
+        console.log(document.querySelector("button")); /*If we have two button then query.selector() only takes the first button so to get the second one as well we can add attribute*/
+        console.log(document.querySelector("button").innerHTML);
+        console.log(document.querySelector("button").innerHTML = "Changed");
+
+        console.log(document.querySelector(".js-button"));
+
+        /*objects are values so we can save them in variables*/
+        const buttonElement = document.querySelector(".js-button");
+        console.log(buttonElement);
+
+    </script>
+</body>
+</html>

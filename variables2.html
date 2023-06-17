@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    
+    <script>
+        let variable1=1;
+        console.log(variable1);
+
+        const calculation=2+2;
+        console.log(calculation);
+        console.log(calculation+3);
+
+        const result=calculation+5;
+        console.log(result);
+
+        let message="Hello";
+        console.log(message);
+
+        variable1=6; /* Note: let is used to create new variable but we dont use let while re-assigning varibale */
+        console.log(variable1);
+
+        variable1=variable1+7; /*We can re-assign variable with the same variable name as much as we want.*/
+        console.log(variable1);
+
+        // Ways to crate variable
+        const variable=4; /*But this variable cannot be changed later. So this is best in use when we dont have to change the variable later.*/
+        var variable4=4; /*This works same as the let but this has some issues so we use let mostly.*/
+        
+        console.log(typeof 3);
+        console.log(typeof variable4);
+        console.log(typeof message);
+
+        // Note that that undefined variable is only used with let not others.
+        let variable6;
+        console.log(variable6);
+
+        const variable8=undefined;
+        console.log(variable8);
+
+        const resulT=5 ? "truthy":"falsy";
+        console.log(resulT);
+
+        const resuLT=0 ? "truthy":"falsy";
+        console.log(resuLT);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Youtube Subscribe Button</p>
+    <button onclick="
+    const buttonElement = document.querySelector('.js-subscribe-button');
+
+    if (buttonElement.innerText === 'Subscribe') {
+        buttonElement.innerHTML = 'Subscribed';
+    }
+    else{
+        buttonElement.innerHTML = 'Subscribe';
+    }
+    " class="js-subscribe-button">
+        Subscribe
+    </button> <!-- Note:while creating button there should not be space between >< because .innerHTML counts space as well.So to be safe dont give space if you give space then you can do buttonElement.innerText.But in the new version of JS it understands and ignore space.But .innerText is better practice.-->
+
+    <!--Note:here we mixed html and javascript code so to make our code cleaner we can put js code in function.You can find it on DOM-3.html-->
+
+    <script>
+
+    </script>
+</body>
+</html>
